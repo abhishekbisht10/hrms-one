@@ -3,6 +3,7 @@ import { Users } from "lucide-react";
 import { getEmployees, getEmployeeAttendance } from "../api";
 import Loader from "../components/Loader";
 import AttendanceModal from "../components/AttendanceModal";
+import { toast } from "react-toastify";
 
 function ViewAttendance() {
   const [search, setSearch] = useState("");
@@ -53,6 +54,10 @@ function ViewAttendance() {
       setModalOpen(true);
     } catch (err) {
       console.error(err);
+
+      if(err.status === 404) {
+        toast.warn("No attendance found. Please mark attendance first.");
+      }
     } finally {
       setLoading(false);
     }

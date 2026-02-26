@@ -45,7 +45,7 @@ function DashboardCharts({ metrics }) {
     const donutOptions = {
       series: [presentToday, absentToday],
       labels: ["Present", "Absent"],
-      colors: [brandColor, brandSecondaryColor],
+      colors: [brandColor, brandTertiaryColor],
       chart: { type: "donut", height: 300 },
       plotOptions: {
         pie: {
