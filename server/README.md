@@ -1,34 +1,22 @@
-# FastAPI Server
+## FastAPI Server
 
-## Setup
+Backend (Mac):
+1. Clone the repo
+2. Navigate to server folder → pip3 install -r requirements.txt
+3. Run server → python3 -m uvicorn main:app --reload
 
-1. Create virtual env (optional)
-   python -m venv venv
-   source venv/bin/activate  # mac/linux
-   venv\Scripts\activate     # windows
+Swagger UI: http://127.0.0.1:8000/docs
 
-2. Install dependencies
-   pip3 install -r requirements.txt
+## API Endpoints
 
-## Run Server
+| Method | Endpoint                  | Description                    |
+| ------ | ------------------------- | ------------------------------ |
+| POST   | /employees                | Add a new employee             |
+| GET    | /employees                | Get all employees              |
+| DELETE | /employees/{employee_id}  | Delete employee                |
+| POST   | /attendance               | Mark attendance                |
+| GET    | /attendance/{employee_id} | View attendance of an employee |
+| GET    | /metrics                  | Get dashboard metrics          |
 
-python3 -m uvicorn main:app --reload
-
-Server runs at:
-http://127.0.0.1:8000
-
-## API Docs
-
-Swagger UI:
-http://127.0.0.1:8000/docs
-
-ReDoc:
-http://127.0.0.1:8000/redoc
-
-## Endpoints
-
-POST   /employees
-GET    /employees
-DELETE /attendance/{employee_id}
-POST   /attendance
-GET    /attendance/{employee_id}
+## Note 
+Keeping .env in public repo to allow viewers to experience the platform end to end

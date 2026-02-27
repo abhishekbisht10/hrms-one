@@ -33,10 +33,13 @@ Frontend:
 
 Backend (Mac):
 1. Clone the repo
-2. Navigate to client folder → pip3 install -r requirements.txt
+2. Navigate to server folder → pip3 install -r requirements.txt
 3. Run server → python3 -m uvicorn main:app --reload
 
 Swagger UI: http://127.0.0.1:8000/docs
+
+## Note 
+Keeping .env in public repo to allow viewers to experience the platform end to end
 
 ## API Endpoints
 
