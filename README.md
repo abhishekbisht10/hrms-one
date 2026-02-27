@@ -38,9 +38,6 @@ Backend (Mac):
 
 Swagger UI: http://127.0.0.1:8000/docs
 
-## Note 
-Keeping .env in public repo to allow viewers to experience the platform end to end
-
 ## API Endpoints
 
 | Method | Endpoint                  | Description                    |

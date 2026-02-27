@@ -17,6 +17,3 @@ Swagger UI: http://127.0.0.1:8000/docs
 | POST   | /attendance               | Mark attendance                |
 | GET    | /attendance/{employee_id} | View attendance of an employee |
 | GET    | /metrics                  | Get dashboard metrics          |
-
-## Note 
-Keeping .env in public repo to allow viewers to experience the platform end to end
