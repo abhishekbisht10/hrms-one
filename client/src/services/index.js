@@ -3,7 +3,7 @@ import axios from "axios";
 
 const baseURL =
   import.meta.env.MODE === "production"
-    ? "DEV URL LGA DO HERE"
+    ? "https://hrms-server-t76j.onrender.com"
     : "http://127.0.0.1:8000";
 
 const apiClient = axios.create({
